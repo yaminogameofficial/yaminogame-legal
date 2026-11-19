@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adventus Zla · Privacidad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE: formal, calm legal memo
+   IDEA: a printed policy sheet, two languages
+   PICTURE: none; the text and the language switch are the content
+   COLOUR and TYPE: white / ink, one deep red accent; Source Serif 4 titles + Inter body
+   LAYOUT: one 720px column, language tabs on top, section links, numbered headings */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121416);--ink:light-dark(#16181a,#e8e6e3);--mute:light-dark(#5a5f66,#a3a7ad);--rule:light-dark(#e2e4e7,#2c3035);--acc:light-dark(#9b1c1c,#f0706a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.65 Inter,system-ui,sans-serif;overflow-x:clip}
+.wrap{max-width:760px;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,18px)}
+header{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:8px}
+.pub{color:var(--mute);font-size:14px;margin:0 0 6px}
+h1{font:600 clamp(32px,5vw,46px)/1.08 "Source Serif 4",Georgia,serif;margin:0 0 10px;text-wrap:balance}
+.date{color:var(--mute);font-size:14px;margin:0}
+.tabs{display:flex;gap:8px;margin:20px 0 6px}
+.tabs a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border:1px solid var(--rule);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.tabs a[aria-current=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabs a:focus-visible,.toc a:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.toc{display:flex;flex-wrap:wrap;gap:4px 14px;padding:12px 0 18px;border-bottom:1px solid var(--rule);font-size:14px}
+.toc a{color:var(--mute);text-decoration:none;padding:4px 0}
+.toc a:hover{color:var(--acc)}
+h2{font:600 22px/1.25 "Source Serif 4",Georgia,serif;margin:34px 0 8px}
+h2 span{color:var(--acc);margin-inline-end:8px}
+p,li{max-width:68ch}
+ul{padding-inline-start:20px}li{margin:4px 0}
+a{color:var(--acc)}
+.box{border-inline-start:3px solid var(--acc);padding:10px 16px;margin:16px 0;background:light-dark(#faf6f5,#1b1d20)}
+.mail{font-weight:600;white-space:nowrap}
+footer{margin-top:44px;padding-top:16px;border-top:1px solid var(--rule);color:var(--mute);font-size:14px}
+[data-lang]{display:none}[data-lang].on{display:block}
+html{scroll-padding-top:24px}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="pub">YamiNoGame</p>
+  <h1 id="t">Política de privacidad de Adventus Zla</h1>
+  <p class="date" id="d">Vigente desde el 19 de noviembre de 2026</p>
+  <nav class="tabs" aria-label="Idioma / Language">
+    <a href="#es" id="tab-es">Español</a>
+    <a href="#en" id="tab-en">English</a>
+  </nav>
+</header>
+
+<!-- ======================= ESPAÑOL ======================= -->
+<section data-lang="es" lang="es">
+<nav class="toc" aria-label="Secciones">
+  <a href="#es-1">Quiénes somos</a><a href="#es-2">Datos</a><a href="#es-3">Uso</a><a href="#es-4">Terceros</a><a href="#es-5">Conservación</a><a href="#es-6">Derechos</a><a href="#es-7">Seguridad</a><a href="#es-8">Menores</a><a href="#es-9">Cambios</a>
+</nav>
+
+<p>Esta política explica qué datos personales recoge el videojuego <strong>Adventus Zla</strong> para PC (Microsoft Store), para qué los usa y qué derechos tienes. No vendemos tus datos ni mostramos publicidad.</p>
+
+<h2 id="es-1"><span>1</span>Quiénes somos</h2>
+<p>El responsable del tratamiento es <strong>YamiNoGame</strong>, editor del juego, con sede en Perú. Para cualquier consulta sobre privacidad escríbenos a <span class="mail">helloyaminogame@gmail.com</span>.</p>
+
+<h2 id="es-2"><span>2</span>Datos que recogemos</h2>
+<ul>
+  <li><strong>Datos de cuenta:</strong> correo electrónico, nombre de usuario y nombre visible, que nos das al crear tu cuenta.</li>
+  <li><strong>Código de acceso:</strong> se guarda cifrado mediante hash; nadie, ni siquiera nosotros, puede leerlo en texto plano.</li>
+  <li><strong>Datos de juego:</strong> progreso, inventario, armas, héroes, historia y monedas del juego.</li>
+  <li><strong>Registros de compras:</strong> qué complemento compraste, cantidad, cristales entregados y fecha, para entregarte lo comprado y evitar duplicados.</li>
+  <li><strong>Identificador de Microsoft Store:</strong> un identificador temporal que Microsoft genera para verificar tus compras. No lo usamos para otra cosa.</li>
+  <li><strong>Datos técnicos:</strong> dirección IP y registros del servidor (fecha, ruta y resultado de cada petición), para seguridad y para corregir errores.</li>
+</ul>
+<div class="box"><strong>No recogemos</strong> datos de pago: los pagos los procesa Microsoft y nunca vemos tu tarjeta. Tampoco usamos herramientas de analítica ni publicidad.</div>
+
+<h2 id="es-3"><span>3</span>Para qué los usamos</h2>
+<ul>
+  <li>Crear y mantener tu cuenta y guardar tu progreso.</li>
+  <li>Entregar los complementos que compras en Microsoft Store.</li>
+  <li>Prevenir trampas, fraude y abusos del servicio.</li>
+  <li>Responder tus consultas de soporte.</li>
+</ul>
+<p>Tratamos tus datos porque son necesarios para darte el servicio que solicitas al crear tu cuenta, y con tu consentimiento, conforme a la Ley N.° 29733, Ley de Protección de Datos Personales del Perú, y su reglamento.</p>
+
+<h2 id="es-4"><span>4</span>Con quién los compartimos</h2>
+<ul>
+  <li><strong>Microsoft</strong> (Microsoft Store y Xbox), para procesar y verificar compras. Microsoft trata tus datos según su propia política de privacidad.</li>
+  <li><strong>Nuestro proveedor de servidores</strong>, ubicado en <strong>Estados Unidos</strong>, donde se almacenan los datos. Al usar el juego, tus datos se transfieren a ese país.</li>
+</ul>
+<p>Solo compartiremos datos con autoridades cuando la ley nos obligue.</p>
+
+<h2 id="es-5"><span>5</span>Cuánto tiempo los guardamos</h2>
+<ul>
+  <li>Datos de cuenta y de juego: mientras tu cuenta esté activa. Si la eliminas, se borran.</li>
+  <li>Registros de compras: el tiempo necesario para atender reclamos, reembolsos y obligaciones legales.</li>
+  <li>Registros técnicos del servidor: hasta 90 días.</li>
+</ul>
+
+<h2 id="es-6"><span>6</span>Tus derechos</h2>
+<p>Puedes ejercer tus derechos de <strong>acceso, rectificación, cancelación (eliminación) y oposición</strong> escribiendo a <span class="mail">helloyaminogame@gmail.com</span> desde el correo de tu cuenta. Respondemos en los plazos que fija la ley. Si no estás conforme, puedes acudir a la Autoridad Nacional de Protección de Datos Personales del Perú.</p>
+
+<h2 id="es-7"><span>7</span>Seguridad</h2>
+<p>Usamos conexiones cifradas (HTTPS), guardamos los códigos de acceso con hash y limitamos el acceso a los servidores. Ningún sistema es 100% seguro, pero si ocurre un incidente que afecte tus datos, te informaremos.</p>
+
+<h2 id="es-8"><span>8</span>Menores de edad</h2>
+<p>Adventus Zla contiene violencia gráfica y contenido para adultos, y <strong>no está dirigido a menores de 18 años</strong>. Los padres o tutores son responsables de supervisar a qué juegos acceden sus hijos; pueden usar los controles parentales de Microsoft y Xbox para bloquearlo.</p>
+<p>No recogemos a sabiendas datos de menores de 14 años. Si descubrimos que un menor de 14 años nos dio sus datos sin el consentimiento de sus padres, eliminaremos la cuenta y sus datos. Si eres padre o tutor y crees que esto ocurrió, escríbenos.</p>
+
+<h2 id="es-9"><span>9</span>Cambios a esta política</h2>
+<p>Si cambiamos esta política, publicaremos la nueva versión en esta página con su fecha. Si el cambio es importante, también lo avisaremos en el juego.</p>
+</section>
+
+<!-- ======================= ENGLISH ======================= -->
+<section data-lang="en" lang="en">
+<nav class="toc" aria-label="Sections">
+  <a href="#en-1">Who we are</a><a href="#en-2">Data</a><a href="#en-3">Use</a><a href="#en-4">Sharing</a><a href="#en-5">Retention</a><a href="#en-6">Rights</a><a href="#en-7">Security</a><a href="#en-8">Minors</a><a href="#en-9">Changes</a>
+</nav>
+
+<p>This policy explains what personal data the video game <strong>Adventus Zla</strong> for PC (Microsoft Store) collects, how it is used and what rights you have. We do not sell your data and we do not show ads.</p>
+
+<h2 id="en-1"><span>1</span>Who we are</h2>
+<p>The data controller is <strong>YamiNoGame</strong>, the game's publisher, based in Peru. For any privacy question, write to <span class="mail">helloyaminogame@gmail.com</span>.</p>
+
+<h2 id="en-2"><span>2</span>Data we collect</h2>
+<ul>
+  <li><strong>Account data:</strong> email address, username and display name, which you give us when you create your account.</li>
+  <li><strong>Access code:</strong> stored as a hash; nobody, not even us, can read it in plain text.</li>
+  <li><strong>Game data:</strong> progress, inventory, weapons, heroes, story and in-game currency.</li>
+  <li><strong>Purchase records:</strong> which add-on you bought, quantity, crystals delivered and date, to deliver what you bought and prevent duplicates.</li>
+  <li><strong>Microsoft Store identifier:</strong> a temporary identifier generated by Microsoft to verify your purchases. We do not use it for anything else.</li>
+  <li><strong>Technical data:</strong> IP address and server logs (date, path and result of each request), for security and bug fixing.</li>
+</ul>
+<div class="box"><strong>We do not collect</strong> payment data: payments are processed by Microsoft and we never see your card. We do not use analytics or advertising tools.</div>
+
+<h2 id="en-3"><span>3</span>How we use it</h2>
+<ul>
+  <li>To create and maintain your account and save your progress.</li>
+  <li>To deliver the add-ons you buy on Microsoft Store.</li>
+  <li>To prevent cheating, fraud and abuse of the service.</li>
+  <li>To answer your support requests.</li>
+</ul>
+<p>We process your data because it is necessary to provide the service you request when you create your account, and with your consent, in accordance with Peru's Personal Data Protection Law No. 29733 and its regulations.</p>
+
+<h2 id="en-4"><span>4</span>Who we share it with</h2>
+<ul>
+  <li><strong>Microsoft</strong> (Microsoft Store and Xbox), to process and verify purchases. Microsoft handles your data under its own privacy policy.</li>
+  <li><strong>Our server provider</strong>, located in the <strong>United States</strong>, where the data is stored. By using the game, your data is transferred to that country.</li>
+</ul>
+<p>We will only share data with authorities when required by law.</p>
+
+<h2 id="en-5"><span>5</span>How long we keep it</h2>
+<ul>
+  <li>Account and game data: while your account is active. If you delete it, the data is erased.</li>
+  <li>Purchase records: as long as needed to handle claims, refunds and legal obligations.</li>
+  <li>Server technical logs: up to 90 days.</li>
+</ul>
+
+<h2 id="en-6"><span>6</span>Your rights</h2>
+<p>You can exercise your rights of <strong>access, rectification, cancellation (deletion) and objection</strong> by writing to <span class="mail">helloyaminogame@gmail.com</span> from your account's email. We reply within the time limits set by law. If you are not satisfied, you can contact Peru's National Authority for Personal Data Protection.</p>
+
+<h2 id="en-7"><span>7</span>Security</h2>
+<p>We use encrypted connections (HTTPS), store access codes as hashes and restrict access to our servers. No system is 100% secure, but if an incident affects your data, we will let you know.</p>
+
+<h2 id="en-8"><span>8</span>Minors</h2>
+<p>Adventus Zla contains graphic violence and mature content and is <strong>not intended for anyone under 18</strong>. Parents and guardians are responsible for supervising which games their children access; they can use Microsoft and Xbox parental controls to block it.</p>
+<p>We do not knowingly collect data from children under 14. If we learn that a child under 14 gave us their data without parental consent, we will delete the account and its data. If you are a parent or guardian and believe this happened, contact us.</p>
+
+<h2 id="en-9"><span>9</span>Changes to this policy</h2>
+<p>If we change this policy, we will post the new version on this page with its date. If the change is significant, we will also announce it in the game.</p>
+</section>
+
+<footer>© 2026 YamiNoGame · <span class="mail">helloyaminogame@gmail.com</span></footer>
+</div>
+
+<script>
+{
+  const T = {
+    es: { t: "Política de privacidad de Adventus Zla", d: "Vigente desde el 19 de noviembre de 2026" },
+    en: { t: "Adventus Zla Privacy Policy", d: "Effective November 19, 2026" }
+  };
+  const show = () => {
+    const h = location.hash.slice(1);
+    const lang = h.startsWith("en") ? "en" : "es";
+    document.querySelectorAll("[data-lang]").forEach(s => s.classList.toggle("on", s.dataset.lang === lang));
+    document.getElementById("tab-es").setAttribute("aria-current", lang === "es");
+    document.getElementById("tab-en").setAttribute("aria-current", lang === "en");
+    document.documentElement.lang = lang;
+    document.getElementById("t").textContent = T[lang].t;
+    document.getElementById("d").textContent = T[lang].d;
+  };
+  window.addEventListener("hashchange", show);
+  show();
+}
+</script>
+</body>
+</html>
